@@ -9,12 +9,18 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     text-decoration: none;
   }
+
+  body {
+    background-color: #f9f9f9;
+  }
 `
 
 export const Container = styled.div`
-  max-width: 1024px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 0 24px;
 `
 
 export default GlobalStyle

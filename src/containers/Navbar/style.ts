@@ -6,6 +6,7 @@ export const Nav = styled.nav`
   align-content: center;
   padding: 1.7rem 3.2rem;
   color: #2d2e32;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
 `
 
 export const Logo = styled.a`
