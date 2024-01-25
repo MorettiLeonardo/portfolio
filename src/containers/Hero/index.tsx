@@ -1,4 +1,4 @@
-import { Avatar, Main, Title, Info, Infos, List } from './style'
+import * as S from './style'
 
 const Hero = () => {
   const skillsIcons = [
@@ -21,10 +21,10 @@ const Hero = () => {
   ]
 
   return (
-    <Main>
-      <Info>
-        <Infos>
-          <Title>Front-End React Developer</Title>
+    <S.Main>
+      <S.Info>
+        <S.Infos>
+          <S.Title>Front-End React Developer</S.Title>
           <p>
             Olá, Eu sou Leonardo Moretti. Um desenvolvedor Front-end React que
             mora em Curitiba, Paraná.
@@ -43,19 +43,20 @@ const Hero = () => {
           >
             <i className="devicon-github-original"></i>
           </a>
-        </Infos>
-        <Avatar />
-      </Info>
+        </S.Infos>
+        <S.Avatar />
+      </S.Info>
 
-      <List>
-        <p>Tech Stack</p>
+      <S.List>
+        <S.P>Tech Stack</S.P>
+        <S.Bar></S.Bar>
         {skillsIcons.map((skill) => (
           <li key={skill.id}>
-            <img src={skill.img} />
+            <S.SkillLogo src={skill.img} />
           </li>
         ))}
-      </List>
-    </Main>
+      </S.List>
+    </S.Main>
   )
 }
 
