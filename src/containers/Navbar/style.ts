@@ -8,6 +8,9 @@ export const Nav = styled.nav`
   color: #2d2e32;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
 `
 
 export const Logo = styled.a`

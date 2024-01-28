@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const Main = styled.main`
-  margin-top: 13%;
+  margin-top: 20vh;
+  height: 80vh;
 `
 
 export const Info = styled.div`
@@ -14,9 +15,8 @@ export const Infos = styled.div`
   max-width: 55%;
 
   p {
-    line-height: 2;
-    margin-top: 18px;
-    margin-bottom: 25px;
+    line-height: 1.4;
+    margin: 24px 0;
     font-size: 18px;
     color: #656565;
   }
