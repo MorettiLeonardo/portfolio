@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
+import avatar from '../../static/avatar.jpg'
+
 export const Main = styled.main`
-  margin-top: 20vh;
+  margin-top: 30vh;
   height: 80vh;
 `
 
@@ -20,17 +22,6 @@ export const Infos = styled.div`
     font-size: 18px;
     color: #656565;
   }
-
-  a {
-    color: #000;
-    font-size: 32px;
-    margin-right: 24px;
-
-    :hover {
-      transition: 0.4s;
-      color: #007acc;
-    }
-  }
 `
 
 export const Title = styled.h1`
@@ -40,7 +31,7 @@ export const Title = styled.h1`
 `
 
 export const Avatar = styled.div`
-  background-image: url('https://scontent.fbfh8-1.fna.fbcdn.net/v/t39.30808-6/340750226_2113065948896246_593794117264848533_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeGiHhRgCZ-rDdB-SyRfoGYEBqgHy04oeRAGqAfLTih5EMfR0WqrA1etaCW1zElAEAFfKKmkeZaPVIE6nhfI1HNM&_nc_ohc=zI9nRUJ8cDMAX9mA653&_nc_ht=scontent.fbfh8-1.fna&oh=00_AfDCHtu6fm5SpOmR6nr1BBQlWYMfFDmL1JmisJxH9AOGTw&oe=65B683A6');
+  background-image: url(${avatar});
   width: 21rem;
   height: 21rem;
   background-size: cover;

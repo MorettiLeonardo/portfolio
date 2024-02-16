@@ -1,3 +1,4 @@
+import { Social } from '../../style'
 import * as S from './style'
 
 const Hero = () => {
@@ -29,20 +30,22 @@ const Hero = () => {
             Olá, Eu sou Leonardo Moretti. Um desenvolvedor Front-end React que
             mora em Curitiba, Paraná.
           </p>
-          <a
+          <Social
+            color="black"
             target="_blank"
             href="https://www.linkedin.com/in/leonardo-frontend-dev/"
             rel="noreferrer"
           >
             <i className="devicon-linkedin-plain"></i>
-          </a>
-          <a
+          </Social>
+          <Social
+            color="black"
             target="_blank"
             href="https://github.com/MorettiLeonardo"
             rel="noreferrer"
           >
             <i className="devicon-github-original"></i>
-          </a>
+          </Social>
         </S.Infos>
         <S.Avatar />
       </S.Info>

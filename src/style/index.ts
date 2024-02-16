@@ -1,5 +1,9 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
+type Props = {
+  color: 'black' | 'white'
+}
+
 const GlobalStyle = createGlobalStyle`
   * {
     padding: 0;
@@ -36,6 +40,17 @@ export const BlueParagraph = styled.span`
   font-weight: 700;
   margin-bottom: 1rem;
   text-transform: uppercase;
+`
+
+export const Social = styled.a<Props>`
+  color: ${(props) => (props.color === 'white' ? '#fff' : '#000')};
+  font-size: 32px;
+  margin-right: 24px;
+
+  :hover {
+    transition: 0.4s;
+    color: #007acc;
+  }
 `
 
 export default GlobalStyle

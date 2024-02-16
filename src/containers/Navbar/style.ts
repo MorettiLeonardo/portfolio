@@ -33,4 +33,8 @@ export const Itens = styled.li`
   &:hover {
     color: #007acc;
   }
+
+  a {
+    color: #2d2e32;
+  }
 `

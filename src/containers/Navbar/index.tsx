@@ -5,8 +5,12 @@ const Navbar = () => {
     <Nav>
       <Logo>Leonardo.dev</Logo>
       <Menu>
-        <Itens>Início</Itens>
-        <Itens>Sobre</Itens>
+        <Itens>
+          <a href="#">inicio</a>
+        </Itens>
+        <Itens>
+          <a href="#about">Sobre</a>
+        </Itens>
         <Itens>Projetos</Itens>
         <Itens>Contato</Itens>
       </Menu>
