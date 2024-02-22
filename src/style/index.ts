@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
 type Props = {
-  color: 'black' | 'white'
+  color?: 'black' | 'white'
 }
 
 const GlobalStyle = createGlobalStyle`

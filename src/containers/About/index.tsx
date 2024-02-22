@@ -1,14 +1,21 @@
 import coffeImage from '../../static/coffee.avif'
+import web_dev from '../../static/web_dev.svg'
+import emoji_work from '../../static/working-emoji.png'
+
 import { BlueParagraph, Title } from '../../style'
-import { Section, Image } from './style'
+import { Section, CoffeImage, Emoji, Images, ImageText } from './style'
 
 const About = () => {
   return (
     <Section>
-      <Image
-        src={coffeImage}
-        alt="Imagem de uma mesa com um café e um notebook"
-      />
+      <Images>
+        <CoffeImage
+          src={coffeImage}
+          alt="Imagem de uma mesa com um café e um notebook"
+        />
+        <ImageText src={web_dev} alt="Front-end Developer" />
+        <Emoji src={emoji_work} alt="Emoji trabalhando" />
+      </Images>
       <div>
         <BlueParagraph>Sobre mim</BlueParagraph>
         <Title>

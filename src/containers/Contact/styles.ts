@@ -1,7 +1,13 @@
 import styled from 'styled-components'
+import { Title } from '../../style'
 
 export const ContactContainer = styled.section`
-  margin: 60px 0;
+  margin-top: 60px;
+  margin-bottom: 100px;
+
+  ${Title} {
+    margin-top: 20px;
+  }
 `
 
 export const Infos = styled.div`
@@ -12,6 +18,10 @@ export const Infos = styled.div`
 
   p {
     color: #8e8e8e;
+
+    &:hover {
+      color: #147efb;
+    }
   }
 `
 
@@ -23,6 +33,10 @@ export const IconBox = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  img {
+    max-width: 30px;
+  }
 `
 
 export const InfosContainer = styled.div`
