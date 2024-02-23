@@ -7,11 +7,16 @@ import {
   ProjectTitle
 } from './styles'
 
-import eplay from '../../static/eplay.png'
-import efood from '../../static/efood.png'
 import redirect from '../../static/share.png'
-import gaming from '../../static/console.png'
+
+import efood from '../../static/efood.png'
 import food from '../../static/cutlery.png'
+
+import eplay from '../../static/eplay.png'
+import gaming from '../../static/console.png'
+
+import taskList from '../../static/taskList.png'
+import task from '../../static/task.png'
 
 type Side = 'left' | 'right'
 
@@ -32,7 +37,7 @@ const GithubProjects: ProjectData[] = [
     cover: `${eplay}`,
     description:
       'descrição do projeto... Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, consequatur illum alias aut cumque excepturi. Dolor doloribus eos iure blanditiis?',
-    techs: ['React', 'Styled Components'],
+    techs: ['ReactTS', 'Styled Components'],
     code: 'https://github.com/MorettiLeonardo/eplay',
     live: '#',
     tagIcon: `${gaming}`,
@@ -43,17 +48,28 @@ const GithubProjects: ProjectData[] = [
     cover: `${efood}`,
     description:
       'descrição do projeto... Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, consequatur illum alias aut cumque excepturi. Dolor doloribus eos iure blanditiis?',
-    techs: ['React', 'Styled Components'],
+    techs: ['ReactTS', 'Styled Components'],
     code: 'https://github.com/MorettiLeonardo/efood',
     live: '#',
     tagIcon: `${food}`,
     side: 'right'
+  },
+  {
+    name: 'Task List',
+    cover: `${taskList}`,
+    description:
+      'Um aplicativo de gestão de tarefas altamente personalizável e intuitivo, projetado para ajudá-lo a organizar suas atividades diárias com eficiência.',
+    techs: ['ReactTS', 'Styled Components', 'Redux'],
+    code: 'https://github.com/MorettiLeonardo/minhas-tarefas',
+    live: 'https://minhas-tarefas-gilt.vercel.app/',
+    tagIcon: `${task}`,
+    side: 'left'
   }
 ]
 
 const Projects = () => {
   return (
-    <ProjectSection>
+    <ProjectSection id="projects">
       <BlueParagraph>Portfolio</BlueParagraph>
       <Title>Cada projeto é uma única peça de desenvolvimento!</Title>
       {GithubProjects.map((project) => (
@@ -66,8 +82,9 @@ const Projects = () => {
             </ProjectTitle>
             <p>{project.description}</p>
             <ProjectInfo>
-              <h4>{project.techs[0]}</h4>
-              <h4>{project.techs[1]}</h4>
+              {project.techs.map((tech) => (
+                <h4 key={tech}>{tech}</h4>
+              ))}
             </ProjectInfo>
             <ProjectInfo>
               <a href={project.code} target="_blank" rel="noreferrer">

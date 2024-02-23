@@ -19,7 +19,7 @@ export const Project = styled.div<Props>`
   direction: ${(props) => (props.side === 'left' ? 'ltr' : 'rtl')};
   text-align: center;
   gap: 30px;
-  margin-top: 2rem;
+  margin-top: 4rem;
 
   p {
     font-size: 18px;
@@ -59,6 +59,11 @@ export const ProjectInfo = styled.div`
     color: #000;
     font-size: 18px;
     transition: 0.3s;
+
+    i,
+    img {
+      margin: 0px 8px;
+    }
 
     &:hover {
       color: #007acc;

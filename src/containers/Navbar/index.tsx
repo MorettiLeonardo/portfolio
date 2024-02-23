@@ -11,8 +11,12 @@ const Navbar = () => {
         <Itens>
           <a href="#about">Sobre</a>
         </Itens>
-        <Itens>Projetos</Itens>
-        <Itens>Contato</Itens>
+        <Itens>
+          <a href="#projects">Projetos</a>
+        </Itens>
+        <Itens>
+          <a href="#contact">Contato</a>
+        </Itens>
       </Menu>
     </Nav>
   )

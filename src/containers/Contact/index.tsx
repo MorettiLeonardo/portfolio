@@ -5,9 +5,9 @@ import maps from '../../static/map.svg'
 import email from '../../static/email_icon.svg'
 
 const Contact = () => (
-  <ContactContainer>
+  <ContactContainer id="contact">
     <BlueParagraph>Contato</BlueParagraph>
-    <Title>Não seja timido! fale comigo! 👇</Title>
+    <Title>Não seja tímido! fale comigo! 👇</Title>
     <InfosContainer>
       <Infos>
         <IconBox>

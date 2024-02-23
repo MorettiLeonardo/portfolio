@@ -22,7 +22,7 @@ const Hero = () => {
   ]
 
   return (
-    <S.Main>
+    <S.Main id="hero">
       <S.Info>
         <S.Infos>
           <S.Title>Front-End React Developer</S.Title>

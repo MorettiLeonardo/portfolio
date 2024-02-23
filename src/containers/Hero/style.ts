@@ -4,7 +4,7 @@ import avatar from '../../static/avatar.jpg'
 
 export const Main = styled.main`
   margin-top: 30vh;
-  height: 80vh;
+  height: 70vh;
 `
 
 export const Info = styled.div`
