@@ -58,14 +58,18 @@ export const ProjectInfo = styled.div`
     align-items: center;
     color: #000;
     font-size: 18px;
-    transition: 0.3s;
 
     i,
     img {
       margin: 0px 8px;
     }
 
-    &:hover {
+    img {
+      max-width: 18px;
+    }
+
+    span:hover {
+      transition: 0.3s;
       color: #007acc;
     }
   }

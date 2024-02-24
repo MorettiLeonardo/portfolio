@@ -69,7 +69,7 @@ const GithubProjects: ProjectData[] = [
 
 const Projects = () => {
   return (
-    <ProjectSection id="projects">
+    <ProjectSection>
       <BlueParagraph>Portfolio</BlueParagraph>
       <Title>Cada projeto é uma única peça de desenvolvimento!</Title>
       {GithubProjects.map((project) => (
@@ -88,10 +88,11 @@ const Projects = () => {
             </ProjectInfo>
             <ProjectInfo>
               <a href={project.code} target="_blank" rel="noreferrer">
-                Código <i className="devicon-github-original"></i>
+                <span>Código</span> <i className="devicon-github-original"></i>
               </a>
               <a href={project.live} target="_blank" rel="noreferrer">
-                Live Demo <img src={redirect} alt="Link de redirecionamento" />{' '}
+                <span>Live Demo</span>{' '}
+                <img src={redirect} alt="Link de redirecionamento" />
               </a>
             </ProjectInfo>
           </div>

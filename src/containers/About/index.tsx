@@ -26,7 +26,7 @@ const About = () => {
           criar e desenvolver uma UI/UX limpa para meus usuários.
         </p>
         <p>
-          Minhas principais habilidades atualmente são React/Vue.js em
+          Minhas principais habilidades atualmente são React, Redux em
           combinação com Styled-Components e TypeScript.
         </p>
       </div>

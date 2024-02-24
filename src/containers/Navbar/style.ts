@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const Nav = styled.nav`
   display: flex;
@@ -23,6 +23,117 @@ export const Logo = styled.a`
 export const Menu = styled.ul`
   display: flex;
   gap: 2rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
+
+type Props = { open: boolean }
+export const Teste = styled.div<Props>`
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  gap: 30px;
+
+  animation: ${({ open }) => (open ? slideInAnimation : slideOutAnimation)} 0.3s
+    ease-in-out forwards;
+
+  a {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  button {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+  }
+`
+
+const slideInAnimation = keyframes`
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+`
+
+const slideOutAnimation = keyframes`
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+`
+
+// const slideIn = keyframes`
+//   from {
+//     transform: translateX(-100%);
+//   }
+//   to {
+//     transform: translateX(0);
+//   }
+// `
+// const slideOut = keyframes`
+//   0% {
+//     transform: translateX(0);
+//   }
+//   100% {
+//     transform: translateX(-100%);
+//   }
+// `
+
+// export const Teste = styled.div<Props>`
+//   display: ${({ open }) => (open ? 'flex' : 'none')};
+//   position: fixed;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   height: 100vh;
+//   top: 0;
+//   z-index: 1;
+//   background-color: #fff;
+//   gap: 30px;
+
+//   animation: ${({ open }) => (open === false ? slideOut : slideIn)} 0.3s
+//     ease-in-out forwards;
+
+//   a {
+//     font-size: 26px;
+//     font-weight: 500;
+//   }
+
+//   button {
+//     position: absolute;
+//     top: 30px;
+//     right: 50px;
+//   }
+// `
+
+export const MenuButton = styled.button`
+  display: none;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+
+  img {
+    max-width: 30px;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `
 
 export const Itens = styled.li`
@@ -31,11 +142,12 @@ export const Itens = styled.li`
   cursor: pointer;
   transition: 0.2s;
 
-  &:hover {
-    color: #007acc;
-  }
-
   a {
     color: #2d2e32;
+    transition: 0.3s;
+
+    &:hover {
+      color: #007acc;
+    }
   }
 `

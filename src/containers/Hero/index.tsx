@@ -13,16 +13,16 @@ const Hero = () => {
     },
     {
       id: 3,
-      img: 'https://skillicons.dev/icons?i=react,vue'
+      img: 'https://skillicons.dev/icons?i=react,redux'
     },
     {
       id: 4,
-      img: 'https://skillicons.dev/icons?i=tailwind,sass'
+      img: 'https://skillicons.dev/icons?i=sass,bootstrap'
     }
   ]
 
   return (
-    <S.Main id="hero">
+    <S.Main>
       <S.Info>
         <S.Infos>
           <S.Title>Front-End React Developer</S.Title>
