@@ -56,6 +56,10 @@ export const Teste = styled.div<Props>`
     top: 30px;
     right: 50px;
   }
+
+  @media (min-width: 769px) {
+    display: none;
+  }
 `
 
 const slideInAnimation = keyframes`
@@ -75,51 +79,6 @@ const slideOutAnimation = keyframes`
     transform: translateX(-100%);
   }
 `
-
-// const slideIn = keyframes`
-//   from {
-//     transform: translateX(-100%);
-//   }
-//   to {
-//     transform: translateX(0);
-//   }
-// `
-// const slideOut = keyframes`
-//   0% {
-//     transform: translateX(0);
-//   }
-//   100% {
-//     transform: translateX(-100%);
-//   }
-// `
-
-// export const Teste = styled.div<Props>`
-//   display: ${({ open }) => (open ? 'flex' : 'none')};
-//   position: fixed;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   height: 100vh;
-//   top: 0;
-//   z-index: 1;
-//   background-color: #fff;
-//   gap: 30px;
-
-//   animation: ${({ open }) => (open === false ? slideOut : slideIn)} 0.3s
-//     ease-in-out forwards;
-
-//   a {
-//     font-size: 26px;
-//     font-weight: 500;
-//   }
-
-//   button {
-//     position: absolute;
-//     top: 30px;
-//     right: 50px;
-//   }
-// `
 
 export const MenuButton = styled.button`
   display: none;

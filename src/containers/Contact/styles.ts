@@ -8,6 +8,16 @@ export const ContactContainer = styled.section`
   ${Title} {
     margin-top: 20px;
   }
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    ${Title} {
+      text-align: center;
+    }
+  }
 `
 
 export const Infos = styled.div`
@@ -22,6 +32,14 @@ export const Infos = styled.div`
     &:hover {
       color: #147efb;
     }
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
   }
 `
 
@@ -43,4 +61,12 @@ export const InfosContainer = styled.div`
   margin-top: 50px;
   display: flex;
   gap: 80px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
 `

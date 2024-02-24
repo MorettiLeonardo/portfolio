@@ -24,6 +24,7 @@ const Hero = () => {
   return (
     <S.Main>
       <S.Info>
+        <S.Avatar />
         <S.Infos>
           <S.Title>Front-End React Developer</S.Title>
           <p>
@@ -47,17 +48,18 @@ const Hero = () => {
             <i className="devicon-github-original"></i>
           </Social>
         </S.Infos>
-        <S.Avatar />
       </S.Info>
 
       <S.List>
         <S.P>Tech Stack</S.P>
         <S.Bar></S.Bar>
-        {skillsIcons.map((skill) => (
-          <li key={skill.id}>
-            <S.SkillLogo src={skill.img} />
-          </li>
-        ))}
+        <S.TechList>
+          {skillsIcons.map((skill) => (
+            <li key={skill.id}>
+              <S.SkillLogo src={skill.img} />
+            </li>
+          ))}
+        </S.TechList>
       </S.List>
     </S.Main>
   )

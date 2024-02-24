@@ -55,15 +55,15 @@ const Navbar = () => {
           <a onClick={(ev) => (scroll(ev, 0, 0), setIsOpen(false))}>inicio</a>
         </Itens>
         <Itens>
-          <a onClick={(ev) => (scroll(ev, 0, 800), setIsOpen(false))}>Sobre</a>
+          <a onClick={(ev) => (scroll(ev, 0, 1100), setIsOpen(false))}>Sobre</a>
         </Itens>
         <Itens>
-          <a onClick={(ev) => (scroll(ev, 0, 1250), setIsOpen(false))}>
+          <a onClick={(ev) => (scroll(ev, 0, 1500), setIsOpen(false))}>
             Projetos
           </a>
         </Itens>
         <Itens>
-          <a onClick={(ev) => (scroll(ev, 0, 2500), setIsOpen(false))}>
+          <a onClick={(ev) => (scroll(ev, 0, 4500), setIsOpen(false))}>
             Contato
           </a>
         </Itens>

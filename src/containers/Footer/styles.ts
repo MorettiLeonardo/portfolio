@@ -15,4 +15,9 @@ export const FooterContainer = styled.footer`
       font-size: 24px;
     }
   }
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    padding: 0 32px;
+  }
 `

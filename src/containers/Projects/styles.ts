@@ -1,7 +1,18 @@
 import styled from 'styled-components'
+import { Title } from '../../style'
 
 export const ProjectSection = styled.section`
   margin: 150px 0px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    margin: 100 0;
+
+    ${Title} {
+      margin: 0 auto;
+      margin-top: 12px;
+    }
+  }
 `
 export const ProjectImage = styled.img`
   max-width: 450px;
@@ -27,6 +38,17 @@ export const Project = styled.div<Props>`
     line-height: 26px;
     color: #767676;
     margin-top: 2.5rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 0;
+      max-width: 300px;
+    }
   }
 `
 
@@ -72,5 +94,9 @@ export const ProjectInfo = styled.div`
       transition: 0.3s;
       color: #007acc;
     }
+  }
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
   }
 `

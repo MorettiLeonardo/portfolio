@@ -3,7 +3,15 @@ import web_dev from '../../static/web_dev.svg'
 import emoji_work from '../../static/working-emoji.png'
 
 import { BlueParagraph, Title } from '../../style'
-import { Section, CoffeImage, Emoji, Images, ImageText } from './style'
+import {
+  Section,
+  CoffeImage,
+  Emoji,
+  Images,
+  ImageText,
+  AboutText,
+  Spare
+} from './style'
 
 const About = () => {
   return (
@@ -16,7 +24,8 @@ const About = () => {
         <ImageText src={web_dev} alt="Front-end Developer" />
         <Emoji src={emoji_work} alt="Emoji trabalhando" />
       </Images>
-      <div>
+      <Spare></Spare>
+      <AboutText>
         <BlueParagraph>Sobre mim</BlueParagraph>
         <Title>
           Desenvolvedor Front-end React que mora em Curitiba, Paraná.
@@ -29,7 +38,7 @@ const About = () => {
           Minhas principais habilidades atualmente são React, Redux em
           combinação com Styled-Components e TypeScript.
         </p>
-      </div>
+      </AboutText>
     </Section>
   )
 }
