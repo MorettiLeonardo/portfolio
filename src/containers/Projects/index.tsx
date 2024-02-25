@@ -48,7 +48,7 @@ const GithubProjects: ProjectData[] = [
     name: 'EFOOD',
     cover: `${efood}`,
     description:
-      'Explore uma infinidade de opções culinárias com o aplicativo EFOOD. De sushi a hambúrgueres, de pizza a comida mexicana, o iFood tem tudo para satisfazer seus desejos gastronômicos, entregando conveniência na palma da sua mão',
+      'Explore uma infinidade de opções culinárias com o aplicativo EFOOD. De sushi a hambúrgueres, de pizza a comida mexicana, a EFOOD tem tudo para satisfazer seus desejos gastronômicos, entregando conveniência na palma da sua mão',
     techs: ['ReactTS', 'Styled Components'],
     code: 'https://github.com/MorettiLeonardo/efood',
     live: 'https://efood-beta-rust.vercel.app/',
