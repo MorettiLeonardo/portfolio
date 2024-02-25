@@ -28,6 +28,9 @@ export const Section = styled.section`
     top: 200px;
     left: 0;
   }
+  @media (max-width: 900px) {
+    gap: 2rem;
+  }
 `
 
 export const Images = styled.div`
@@ -48,7 +51,7 @@ export const Spare = styled.div`
     padding: 100px;
   }
   @media (max-height: 598px) {
-    padding: 130px;
+    padding: 1430px;
   }
 `
 

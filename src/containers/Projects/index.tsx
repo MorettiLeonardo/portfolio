@@ -4,6 +4,7 @@ import {
   ProjectImage,
   ProjectInfo,
   ProjectSection,
+  ProjectTechs,
   ProjectTitle
 } from './styles'
 
@@ -36,7 +37,7 @@ const GithubProjects: ProjectData[] = [
     name: 'EPLAY',
     cover: `${eplay}`,
     description:
-      'descrição do projeto... Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, consequatur illum alias aut cumque excepturi. Dolor doloribus eos iure blanditiis?',
+      'A EPLAY é a sua loja de jogos online definitiva, oferecendo uma interface moderna e amigável para explorar uma vasta coleção de jogos. Com destaques dos últimos lançamentos e promoções especiais, você pode encontrar facilmente os jogos ideais para você',
     techs: ['ReactTS', 'Styled Components'],
     code: 'https://github.com/MorettiLeonardo/eplay',
     live: '#',
@@ -47,7 +48,7 @@ const GithubProjects: ProjectData[] = [
     name: 'EFOOD',
     cover: `${efood}`,
     description:
-      'descrição do projeto... Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, consequatur illum alias aut cumque excepturi. Dolor doloribus eos iure blanditiis?',
+      'Explore uma infinidade de opções culinárias com o aplicativo EFOOD. De sushi a hambúrgueres, de pizza a comida mexicana, o iFood tem tudo para satisfazer seus desejos gastronômicos, entregando conveniência na palma da sua mão',
     techs: ['ReactTS', 'Styled Components'],
     code: 'https://github.com/MorettiLeonardo/efood',
     live: '#',
@@ -58,7 +59,7 @@ const GithubProjects: ProjectData[] = [
     name: 'Task List',
     cover: `${taskList}`,
     description:
-      'Um aplicativo de gestão de tarefas altamente personalizável e intuitivo, projetado para ajudá-lo a organizar suas atividades diárias com eficiência.',
+      'Um aplicativo de gestão de tarefas altamente personalizável e intuitivo, projetado para ajudá-lo a organizar suas atividades diárias com eficiência',
     techs: ['ReactTS', 'Styled Components', 'Redux'],
     code: 'https://github.com/MorettiLeonardo/minhas-tarefas',
     live: 'https://minhas-tarefas-gilt.vercel.app/',
@@ -82,9 +83,11 @@ const Projects = () => {
             </ProjectTitle>
             <p>{project.description}</p>
             <ProjectInfo>
-              {project.techs.map((tech) => (
-                <h4 key={tech}>{tech}</h4>
-              ))}
+              <ProjectTechs>
+                {project.techs.map((tech) => (
+                  <h4 key={tech}>{tech}</h4>
+                ))}
+              </ProjectTechs>
             </ProjectInfo>
             <ProjectInfo>
               <a href={project.code} target="_blank" rel="noreferrer">

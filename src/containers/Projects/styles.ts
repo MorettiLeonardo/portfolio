@@ -56,7 +56,7 @@ export const ProjectTitle = styled.h3`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2.5rem;
+  margin-top: 24px;
   font-size: 24px;
   color: #2d2e32;
   direction: ltr;
@@ -95,8 +95,12 @@ export const ProjectInfo = styled.div`
       color: #007acc;
     }
   }
+`
 
-  @media (max-width: 768px) {
-    flex-wrap: wrap;
-  }
+export const ProjectTechs = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 `
