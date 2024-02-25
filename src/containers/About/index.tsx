@@ -28,15 +28,15 @@ const About = () => {
       <AboutText>
         <BlueParagraph>Sobre mim</BlueParagraph>
         <Title>
-          Desenvolvedor Front-end React que mora em Curitiba, Paraná.
+          Desenvolvedor Front-end React que mora em Curitiba, Paraná
         </Title>
         <p>
           Olá, meu nome é Leonardo e sou desenvolvedor front-end. Minha paixão é
-          criar e desenvolver uma UI/UX limpa para meus usuários.
+          criar e desenvolver uma UI/UX limpa para meus usuários
         </p>
         <p>
           Minhas principais habilidades atualmente são React, Redux em
-          combinação com Styled-Components e TypeScript.
+          combinação com Styled-Components e TypeScript
         </p>
       </AboutText>
     </Section>

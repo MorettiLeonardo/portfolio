@@ -26,10 +26,10 @@ const Hero = () => {
       <S.Info>
         <S.Avatar />
         <S.Infos>
-          <S.Title>Front-End React Developer</S.Title>
+          <S.Title>Desenvolvedor React Front-end</S.Title>
           <p>
             Olá, Eu sou Leonardo Moretti. Um desenvolvedor Front-end React que
-            mora em Curitiba, Paraná.
+            mora em Curitiba, Paraná
           </p>
           <Social
             color="black"
