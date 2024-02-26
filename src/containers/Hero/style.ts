@@ -42,6 +42,9 @@ export const Title = styled.h1`
   color: #2d2e32;
   line-height: 1.2;
 
+  @media (max-width: 869px) {
+    font-size: 2rem;
+  }
   @media (max-width: 500px) {
     font-size: 2rem;
   }
