@@ -38,7 +38,7 @@ const GithubProjects: ProjectData[] = [
     cover: `${eplay}`,
     description:
       'A EPLAY é a sua loja de jogos online definitiva, oferecendo uma interface moderna e amigável para explorar uma vasta coleção de jogos. Com destaques dos últimos lançamentos e promoções especiais, você pode encontrar facilmente os jogos ideais para você',
-    techs: ['ReactTS', 'Styled Components'],
+    techs: ['ReactTS', 'Styled Components', 'Redux'],
     code: 'https://github.com/MorettiLeonardo/eplay',
     live: 'https://eplay-eosin.vercel.app/',
     tagIcon: `${gaming}`,
@@ -49,7 +49,7 @@ const GithubProjects: ProjectData[] = [
     cover: `${efood}`,
     description:
       'Explore uma infinidade de opções culinárias com o aplicativo EFOOD. De sushi a hambúrgueres, de pizza a comida mexicana, a EFOOD tem tudo para satisfazer seus desejos gastronômicos, entregando conveniência na palma da sua mão',
-    techs: ['ReactTS', 'Styled Components'],
+    techs: ['ReactTS', 'Styled Components', 'Redux'],
     code: 'https://github.com/MorettiLeonardo/efood',
     live: 'https://efood-beta-rust.vercel.app/',
     tagIcon: `${food}`,

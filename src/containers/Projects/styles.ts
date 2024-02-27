@@ -40,11 +40,18 @@ export const Project = styled.div<Props>`
     margin-top: 2.5rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 952px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 768px) {
     img {
       margin: 0;
       max-width: 300px;
