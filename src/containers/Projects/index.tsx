@@ -10,14 +10,14 @@ import {
 
 import redirect from '../../static/share.png'
 
-import efood from '../../static/efood.png'
-import food from '../../static/cutlery.png'
+import project1 from '../../static/efood.png'
+import icon1 from '../../static/cutlery.png'
 
-import eplay from '../../static/eplay.png'
-import gaming from '../../static/console.png'
+import project2 from '../../static/eplay.png'
+import icon2 from '../../static/console.png'
 
-import project3 from '../../static/rent.JPG'
-import task from '../../static/car.png'
+import project3 from '../../static/rent.jpeg'
+import icon3 from '../../static/car.png'
 
 type Side = 'left' | 'right'
 
@@ -35,24 +35,24 @@ interface ProjectData {
 const GithubProjects: ProjectData[] = [
   {
     name: 'EPLAY',
-    cover: `${eplay}`,
+    cover: `${project1}`,
     description:
       'A EPLAY é a sua loja de jogos online definitiva, oferecendo uma interface moderna e amigável para explorar uma vasta coleção de jogos. Com destaques dos últimos lançamentos e promoções especiais, você pode encontrar facilmente os jogos ideais para você',
     techs: ['ReactTS', 'Styled Components', 'Redux'],
     code: 'https://github.com/MorettiLeonardo/eplay',
     live: 'https://eplay-eosin.vercel.app/',
-    tagIcon: `${gaming}`,
+    tagIcon: `${icon1}`,
     side: 'left'
   },
   {
     name: 'EFOOD',
-    cover: `${efood}`,
+    cover: `${project2}`,
     description:
       'Explore uma infinidade de opções culinárias com o aplicativo EFOOD. De sushi a hambúrgueres, de pizza a comida mexicana, a EFOOD tem tudo para satisfazer seus desejos gastronômicos, entregando conveniência na palma da sua mão',
     techs: ['ReactTS', 'Styled Components', 'Redux'],
     code: 'https://github.com/MorettiLeonardo/efood',
     live: 'https://efood-beta-rust.vercel.app/',
-    tagIcon: `${food}`,
+    tagIcon: `${icon2}`,
     side: 'right'
   },
   {
@@ -63,7 +63,7 @@ const GithubProjects: ProjectData[] = [
     techs: ['ReactTS', 'Styled Components'],
     code: 'https://github.com/MorettiLeonardo/car-rent',
     live: 'https://car-rent-drab.vercel.app/',
-    tagIcon: `${task}`,
+    tagIcon: `${icon3}`,
     side: 'left'
   }
 ]
