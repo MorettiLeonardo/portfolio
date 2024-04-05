@@ -16,8 +16,8 @@ import food from '../../static/cutlery.png'
 import eplay from '../../static/eplay.png'
 import gaming from '../../static/console.png'
 
-import taskList from '../../static/taskList.png'
-import task from '../../static/task.png'
+import project3 from '../../static/rent.JPG'
+import task from '../../static/car.png'
 
 type Side = 'left' | 'right'
 
@@ -56,13 +56,13 @@ const GithubProjects: ProjectData[] = [
     side: 'right'
   },
   {
-    name: 'Task List',
-    cover: `${taskList}`,
+    name: 'Rent Wheels',
+    cover: `${project3}`,
     description:
-      'Um aplicativo de gestão de tarefas altamente personalizável e intuitivo, projetado para ajudá-lo a organizar suas atividades diárias com eficiência',
-    techs: ['ReactTS', 'Styled Components', 'Redux'],
-    code: 'https://github.com/MorettiLeonardo/minhas-tarefas',
-    live: 'https://minhas-tarefas-gilt.vercel.app/',
+      'Um site de aluguel de carros oferece aos usuários a conveniência de pesquisar, comparar e reservar uma variedade de veículos online, personalizando suas escolhas com datas, locais de retirada e devolução, e extras como seguro.',
+    techs: ['ReactTS', 'Styled Components'],
+    code: 'https://github.com/MorettiLeonardo/car-rent',
+    live: 'https://car-rent-drab.vercel.app/',
     tagIcon: `${task}`,
     side: 'left'
   }
