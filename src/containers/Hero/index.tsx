@@ -1,4 +1,5 @@
 import { Social } from '../../style'
+
 import * as S from './style'
 
 const Hero = () => {

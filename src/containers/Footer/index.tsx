@@ -1,4 +1,5 @@
 import { Container, Social } from '../../style'
+
 import { FooterContainer } from './styles'
 
 const Footer = () => {

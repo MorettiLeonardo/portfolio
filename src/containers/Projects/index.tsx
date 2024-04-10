@@ -1,12 +1,4 @@
 import { BlueParagraph, Title } from '../../style'
-import {
-  Project,
-  ProjectImage,
-  ProjectInfo,
-  ProjectSection,
-  ProjectTechs,
-  ProjectTitle
-} from './styles'
 
 import redirect from '../../static/share.png'
 
@@ -18,6 +10,8 @@ import icon2 from '../../static/console.png'
 
 import project3 from '../../static/rent.jpeg'
 import icon3 from '../../static/car.png'
+
+import * as S from './styles'
 
 type Side = 'left' | 'right'
 
@@ -38,7 +32,7 @@ const GithubProjects: ProjectData[] = [
     cover: `${project1}`,
     description:
       'A EPLAY é a sua loja de jogos online definitiva, oferecendo uma interface moderna e amigável para explorar uma vasta coleção de jogos. Com destaques dos últimos lançamentos e promoções especiais, você pode encontrar facilmente os jogos ideais para você',
-    techs: ['ReactTS', 'Styled Components', 'Redux'],
+    techs: ['ReactTS', 'Styled Components', 'Redux', 'API'],
     code: 'https://github.com/MorettiLeonardo/eplay',
     live: 'https://eplay-eosin.vercel.app/',
     tagIcon: `${icon1}`,
@@ -49,7 +43,7 @@ const GithubProjects: ProjectData[] = [
     cover: `${project2}`,
     description:
       'Explore uma infinidade de opções culinárias com o aplicativo EFOOD. De sushi a hambúrgueres, de pizza a comida mexicana, a EFOOD tem tudo para satisfazer seus desejos gastronômicos, entregando conveniência na palma da sua mão',
-    techs: ['ReactTS', 'Styled Components', 'Redux'],
+    techs: ['ReactTS', 'Styled Components', 'Redux', 'API'],
     code: 'https://github.com/MorettiLeonardo/efood',
     live: 'https://efood-beta-rust.vercel.app/',
     tagIcon: `${icon2}`,
@@ -70,26 +64,26 @@ const GithubProjects: ProjectData[] = [
 
 const Projects = () => {
   return (
-    <ProjectSection>
+    <S.ProjectSection>
       <BlueParagraph>Portfolio</BlueParagraph>
       <Title>Cada projeto é uma única peça de desenvolvimento!</Title>
       {GithubProjects.map((project) => (
-        <Project side={project.side} key={project.name}>
-          <ProjectImage src={project.cover} alt="" />
+        <S.Project side={project.side} key={project.name}>
+          <S.ProjectImage src={project.cover} alt="" />
           <div>
-            <ProjectTitle>
+            <S.ProjectTitle>
               {project.name}
               <img src={project.tagIcon} />
-            </ProjectTitle>
+            </S.ProjectTitle>
             <p>{project.description}</p>
-            <ProjectInfo>
-              <ProjectTechs>
+            <S.ProjectInfo>
+              <S.ProjectTechs>
                 {project.techs.map((tech) => (
                   <h4 key={tech}>{tech}</h4>
                 ))}
-              </ProjectTechs>
-            </ProjectInfo>
-            <ProjectInfo>
+              </S.ProjectTechs>
+            </S.ProjectInfo>
+            <S.ProjectInfo>
               <a href={project.code} target="_blank" rel="noreferrer">
                 <span>Código</span> <i className="devicon-github-original"></i>
               </a>
@@ -97,11 +91,11 @@ const Projects = () => {
                 <span>Live Demo</span>{' '}
                 <img src={redirect} alt="Link de redirecionamento" />
               </a>
-            </ProjectInfo>
+            </S.ProjectInfo>
           </div>
-        </Project>
+        </S.Project>
       ))}
-    </ProjectSection>
+    </S.ProjectSection>
   )
 }
 

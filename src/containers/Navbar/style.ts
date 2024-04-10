@@ -30,7 +30,8 @@ export const Menu = styled.ul`
 `
 
 type Props = { open: boolean }
-export const Teste = styled.div<Props>`
+
+export const Overlay = styled.div<Props>`
   display: flex;
   position: fixed;
   flex-direction: column;

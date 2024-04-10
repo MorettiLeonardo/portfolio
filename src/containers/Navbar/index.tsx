@@ -1,9 +1,9 @@
-import { Nav, Menu, Logo, Itens, MenuButton, Teste } from './style'
+import { useState } from 'react'
 
 import menu from '../../static/more.png'
 import close from '../../static/close.png'
 
-import { useState } from 'react'
+import * as S from './style'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,47 +27,47 @@ const Navbar = () => {
 
   return (
     <div>
-      <Nav onSubmit={(e) => e.preventDefault()}>
-        <Logo>Leonardo.dev</Logo>
-        <MenuButton onClick={toggle}>
+      <S.Nav onSubmit={(e) => e.preventDefault()}>
+        <S.Logo>Leonardo.dev</S.Logo>
+        <S.MenuButton onClick={toggle}>
           <img src={menu} alt="Menu" />
-        </MenuButton>
-        <Menu>
-          <Itens>
+        </S.MenuButton>
+        <S.Menu>
+          <S.Itens>
             <a onClick={(ev) => scroll(ev, 0, 0)}>inicio</a>
-          </Itens>
-          <Itens>
+          </S.Itens>
+          <S.Itens>
             <a onClick={(ev) => scroll(ev, 0, 800)}>Sobre</a>
-          </Itens>
-          <Itens>
+          </S.Itens>
+          <S.Itens>
             <a onClick={(ev) => scroll(ev, 0, 1250)}>Projetos</a>
-          </Itens>
-          <Itens>
+          </S.Itens>
+          <S.Itens>
             <a onClick={(ev) => scroll(ev, 0, 2500)}>Contato</a>
-          </Itens>
-        </Menu>
-      </Nav>
-      <Teste open={isOpen}>
-        <MenuButton onClick={() => toggle()}>
+          </S.Itens>
+        </S.Menu>
+      </S.Nav>
+      <S.Overlay open={isOpen}>
+        <S.MenuButton onClick={() => toggle()}>
           <img src={close} alt="Fechar" />
-        </MenuButton>
-        <Itens>
+        </S.MenuButton>
+        <S.Itens>
           <a onClick={(ev) => (scroll(ev, 0, 0), setIsOpen(false))}>inicio</a>
-        </Itens>
-        <Itens>
+        </S.Itens>
+        <S.Itens>
           <a onClick={(ev) => (scroll(ev, 0, 1100), setIsOpen(false))}>Sobre</a>
-        </Itens>
-        <Itens>
+        </S.Itens>
+        <S.Itens>
           <a onClick={(ev) => (scroll(ev, 0, 1500), setIsOpen(false))}>
             Projetos
           </a>
-        </Itens>
-        <Itens>
+        </S.Itens>
+        <S.Itens>
           <a onClick={(ev) => (scroll(ev, 0, 4500), setIsOpen(false))}>
             Contato
           </a>
-        </Itens>
-      </Teste>
+        </S.Itens>
+      </S.Overlay>
     </div>
   )
 }
