@@ -29,24 +29,24 @@ interface ProjectData {
 const GithubProjects: ProjectData[] = [
   {
     name: 'EPLAY',
-    cover: `${project1}`,
+    cover: `${project2}`,
     description:
       'A EPLAY é a sua loja de jogos online definitiva, oferecendo uma interface moderna e amigável para explorar uma vasta coleção de jogos. Com destaques dos últimos lançamentos e promoções especiais, você pode encontrar facilmente os jogos ideais para você',
     techs: ['ReactTS', 'Styled Components', 'Redux', 'API'],
     code: 'https://github.com/MorettiLeonardo/eplay',
     live: 'https://eplay-eosin.vercel.app/',
-    tagIcon: `${icon1}`,
+    tagIcon: `${icon2}`,
     side: 'left'
   },
   {
     name: 'EFOOD',
-    cover: `${project2}`,
+    cover: `${project1}`,
     description:
       'Explore uma infinidade de opções culinárias com o aplicativo EFOOD. De sushi a hambúrgueres, de pizza a comida mexicana, a EFOOD tem tudo para satisfazer seus desejos gastronômicos, entregando conveniência na palma da sua mão',
     techs: ['ReactTS', 'Styled Components', 'Redux', 'API'],
     code: 'https://github.com/MorettiLeonardo/efood',
     live: 'https://efood-beta-rust.vercel.app/',
-    tagIcon: `${icon2}`,
+    tagIcon: `${icon1}`,
     side: 'right'
   },
   {

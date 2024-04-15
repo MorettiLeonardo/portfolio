@@ -46,7 +46,8 @@ export const Title = styled.h1`
     font-size: 2rem;
   }
   @media (max-width: 500px) {
-    font-size: 2rem;
+    font-size: 24px;
+    text-align: center;
   }
 `
 
@@ -73,6 +74,10 @@ export const Avatar = styled.div`
 
   @media (max-width: 768px) {
     margin-bottom: 16px;
+  }
+  @media (max-width: 768px) {
+    width: 15rem;
+    height: 15rem;
   }
 `
 
