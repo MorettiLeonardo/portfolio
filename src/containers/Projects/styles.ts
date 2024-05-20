@@ -17,8 +17,15 @@ export const ProjectSection = styled.section`
 export const ProjectImage = styled.img`
   max-width: 450px;
   max-height: 350px;
+
+  object-fit: cover;
   margin-top: 24px;
   border-radius: 1rem;
+
+  @media (max-width: 504px) {
+    min-width: auto;
+    min-height: auto;
+  }
 `
 
 type Props = {

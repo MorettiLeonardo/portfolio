@@ -11,6 +11,9 @@ import icon2 from '../../static/console.png'
 import project3 from '../../static/rent.jpeg'
 import icon3 from '../../static/car.png'
 
+import project4 from '../../static/bodyfit.png'
+import icon4 from '../../static/fit.png'
+
 import * as S from './styles'
 
 type Side = 'left' | 'right'
@@ -59,6 +62,17 @@ const GithubProjects: ProjectData[] = [
     live: 'https://car-rent-drab.vercel.app/',
     tagIcon: `${icon3}`,
     side: 'left'
+  },
+  {
+    name: 'Bodyfit',
+    cover: `${project4}`,
+    description:
+      'Na BodyFit, nos dedicamos a ajudá-lo a alcançar o corpo dos seus sonhos. Nossos treinadores e nutricionistas especializados trabalharão com você para criar um plano personalizado de condicionamento físico e nutrição que o ajudará a atingir seus objetivos',
+    techs: ['ReactTS', 'Tailwind'],
+    code: 'https://github.com/MorettiLeonardo/bodyfit',
+    live: 'https://bodyfit.vercel.app/',
+    tagIcon: `${icon4}`,
+    side: 'right'
   }
 ]
 
