@@ -14,11 +14,11 @@ const Hero = () => {
     },
     {
       id: 3,
-      img: 'https://skillicons.dev/icons?i=react,redux'
+      img: 'https://skillicons.dev/icons?i=react,next'
     },
     {
       id: 4,
-      img: 'https://skillicons.dev/icons?i=sass,bootstrap'
+      img: 'https://skillicons.dev/icons?i=sass,tailwind'
     }
   ]
 
